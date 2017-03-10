@@ -4,13 +4,15 @@
 #include <iostream>
 using namespace System;
 bool Guess(int number) {
-	return 0;
+	return false;
 }
 int main(array<System::String ^> ^args)
 {
-	int Gss;
+	int guess;
 	do {
-		std::cin >> Gss;
-	} while (!Guess(Gss));
-	return 0;
+		std::cout << "Choose a number between 1 - 100 :";
+		std::cin >> guess;
+	} while (Guess(guess));
+	return 0;
+
 }
